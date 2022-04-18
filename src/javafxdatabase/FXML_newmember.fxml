@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdatabase.FXML_newmemberController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-11.0" prefHeight="464.0" prefWidth="637.0" style="-fx-background-color: #009688;">
+         <children>
+            <VBox layoutX="79.0" layoutY="106.0" prefHeight="200.0" prefWidth="218.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="id" blendMode="MULTIPLY" promptText="Memeber ID ">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <VBox prefHeight="135.0" prefWidth="220.0" spacing="25.0">
+                     <children>
+                        <TextField fx:id="FN" blendMode="MULTIPLY" prefHeight="12.0" prefWidth="219.0" promptText="First Name">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="MN" blendMode="MULTIPLY" promptText="Second Name">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="LN" blendMode="MULTIPLY" promptText="Last Name">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="emailAdd" blendMode="MULTIPLY" promptText="Email Address">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="phone" blendMode="MULTIPLY" promptText="Phone #">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox fx:id="price" layoutX="338.0" layoutY="106.0" prefHeight="200.0" prefWidth="220.0" spacing="25.0">
+               <children>
+                  <HBox prefHeight="200.0" prefWidth="218.0">
+                     <children>
+                        <CheckBox fx:id="femaleCheck" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#genderCheck" prefHeight="21.0" prefWidth="103.0" text="Female" textFill="#393837">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="maleCheck" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#genderCheck" prefHeight="21.0" prefWidth="97.0" text="Male" textFill="#393837">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <DatePicker fx:id="DB" blendMode="MULTIPLY" prefHeight="31.0" prefWidth="232.0" promptText="Date Of Birth">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </DatePicker>
+                  <DatePicker fx:id="DP" blendMode="MULTIPLY" prefHeight="31.0" prefWidth="228.0" promptText="Date of Participation">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </DatePicker>
+                  <TextField fx:id="paidp" blendMode="MULTIPLY" prefHeight="31.0" prefWidth="220.0" promptText="The Price paid">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="ssn" blendMode="MULTIPLY" promptText="Attended By..">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </VBox>
+            <Button fx:id="add" layoutX="453.0" layoutY="386.0" mnemonicParsing="false" onAction="#memberAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #f44336; -fx-background-radius: 50;" text="ADD">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Button>
+            <HBox layoutX="30.0" layoutY="14.0" prefHeight="59.0" prefWidth="474.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="142.0" text="ADDING">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="44.0" prefWidth="88.0" text="NEW">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="44.0" prefWidth="152.0" text="MEMBER">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

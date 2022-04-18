@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdatabase.FXML_addbooksController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-9.0" prefHeight="400.0" prefWidth="633.0" style="-fx-background-color: #009688;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="79.0" layoutY="106.0" prefHeight="200.0" prefWidth="218.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="isbn" blendMode="MULTIPLY" promptText="ISBN">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="author" blendMode="MULTIPLY" promptText="Author Name">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="publisher" blendMode="MULTIPLY" promptText="Publisher">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="genre" blendMode="MULTIPLY" promptText="Genre">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="ssn" blendMode="MULTIPLY" promptText="Attended By...">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox fx:id="year" layoutX="338.0" layoutY="106.0" prefHeight="200.0" prefWidth="220.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="bookname" blendMode="MULTIPLY" prefHeight="12.0" prefWidth="219.0" promptText="Book Name">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="year1" blendMode="MULTIPLY" promptText="Publisher Year">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="language" blendMode="MULTIPLY" promptText="Written Language">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="quantity" blendMode="MULTIPLY" promptText="Quantity">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </VBox>
+            <Button fx:id="add" layoutX="456.0" layoutY="330.0" mnemonicParsing="false" onAction="#okAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #f44336; -fx-background-radius: 50;" text="ADD">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Button>
+            <HBox layoutX="30.0" layoutY="27.0" prefHeight="59.0" prefWidth="474.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="142.0" text="ADDING">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="44.0" prefWidth="88.0" text="NEW">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="44.0" prefWidth="152.0" text="BOOK">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdatabase.FXML_homepageController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="821.0" prefWidth="697.0" style="-fx-background-color: fffdfd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="248.0" fitWidth="203.0" layoutY="513.0">
+                     <image>
+                        <Image url="@../photo/NPX231GRD-0_01.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane blendMode="MULTIPLY" prefHeight="171.0" prefWidth="697.0" style="-fx-background-color: #009688;" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox layoutX="67.0" layoutY="41.0" prefHeight="90.0" prefWidth="451.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="246.0" text="WELCOME TO" textFill="#f8f7f7">
+                                 <font>
+                                    <Font name="Cambria Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="443.0" text="     Library Management System." textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="32.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="21.0" layoutY="41.0">
+                           <image>
+                              <Image url="@../photo/icons8-library-100.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <GridPane layoutX="130.0" layoutY="240.0" prefHeight="400.0" prefWidth="517.0" AnchorPane.bottomAnchor="141.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="240.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="238.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="15.0" prefWidth="39.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="338.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="15.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="15.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="bookhome" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="125.0" prefWidth="209.0" style="-fx-background-color: #f44336;" text="Books" textFill="#fffdfd">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="39.0" fitWidth="45.0">
+                                 <image>
+                                    <Image url="@../photo/icons8-books-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Button>
+                        <Button fx:id="libhome" alignment="CENTER" blendMode="MULTIPLY" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="125.0" prefWidth="209.0" style="-fx-background-color: #f44336;" text="  Librarians" textFill="#f5f3f3" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <graphic>
+                              <ImageView blendMode="ADD" fitHeight="39.0" fitWidth="45.0">
+                                 <image>
+                                    <Image url="@../photo/icons8-management-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="memhome" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="125.0" prefWidth="209.0" style="-fx-background-color: #f44336;" text="Members" textFill="#fcfafa" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <graphic>
+                              <ImageView blendMode="ADD" fitHeight="39.0" fitWidth="45.0">
+                                 <image>
+                                    <Image url="@../photo/icons8-management-96.png" />
+                                 </image>
+                                
+                                 
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="issuehome" alignment="CENTER" blendMode="MULTIPLY" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#handleButtonAction" prefHeight="125.0" prefWidth="209.0" style="-fx-background-color: #f44336;" text="Books Issue" textFill="#f8f6f6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <graphic>
+                              <ImageView blendMode="ADD" fitHeight="39.0" fitWidth="45.0">
+                                 <image>
+                                    <Image url="@../photo/icons8-books-64%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="report" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="125.0" prefWidth="209.0" style="-fx-background-color: #f44336;" text="Reports" textFill="#f8f6f6" GridPane.rowIndex="4">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView blendMode="ADD" fitHeight="39.0" fitWidth="45.0">
+                                 <image>
+                                    <Image url="@../photo/icons8-combo-chart-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="exithome" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#handleButtonAction" prefHeight="125.0" prefWidth="209.0" style="-fx-background-color: #f44336;" text="Exit" textFill="#f8f6f6" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView blendMode="ADD" fitHeight="39.0" fitWidth="45.0">
+                                 <image>
+                                    <Image url="@../photo/icons8-exit-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

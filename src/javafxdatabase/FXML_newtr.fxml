@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdatabase.FXML_newtrController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-4.0" prefHeight="426.0" prefWidth="625.0" style="-fx-background-color: #009688;" AnchorPane.leftAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="add" layoutX="429.0" layoutY="342.0" mnemonicParsing="false" onAction="#transAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #f44336; -fx-background-radius: 50;" text="ADD" textFill="#1b1b1b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="12.0" layoutY="207.0" prefHeight="17.0" prefWidth="54.0" textFill="WHITE" />
+            <VBox layoutX="66.0" layoutY="118.0" prefHeight="200.0" prefWidth="220.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="trans_No" blendMode="MULTIPLY" prefHeight="25.0" prefWidth="160.0" promptText="Issue ID">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="memberID" blendMode="MULTIPLY" prefWidth="160.0" promptText="Member ID">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <DatePicker fx:id="DOI" blendMode="MULTIPLY" prefHeight="31.0" prefWidth="228.0" promptText="Date of Issue">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </DatePicker>
+                  <DatePicker fx:id="DR" blendMode="MULTIPLY" prefHeight="31.0" prefWidth="233.0" promptText="Date Returned">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </DatePicker>
+                  <TextField fx:id="fine" blendMode="MULTIPLY" prefHeight="25.0" prefWidth="160.0" promptText="Fine amount if any">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox layoutX="316.0" layoutY="118.0" prefHeight="200.0" prefWidth="220.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="isbn" blendMode="MULTIPLY" prefHeight="25.0" prefWidth="160.0" promptText="Book ISBN">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <ComboBox fx:id="duration" blendMode="MULTIPLY" onAction="#durationComboBox" prefHeight="31.0" prefWidth="231.0" promptText="Duration ">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ComboBox>
+                  <TextField fx:id="action" blendMode="MULTIPLY" prefHeight="31.0" prefWidth="220.0" promptText="Action">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="ssn" blendMode="MULTIPLY" promptText="Attended By">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </VBox>
+            <HBox layoutX="29.0" layoutY="39.0" prefHeight="46.0" prefWidth="536.0" spacing="5.0">
+               <children>
+                  <Label text="MADE">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text=" A NEW ">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="44.0" prefWidth="246.0" text="TRANSACTION">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
